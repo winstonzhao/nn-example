@@ -23,3 +23,6 @@ kmeans = NearestNeighbors(n_neighbors=2, radius=0.4).fit(X)
 print(kmeans.kneighbors([[1.000e+00, 1.961e+03, 1.000e+00, 1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
  0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
  0.000e+00]], 5, False))
+
+ # Returns [[ 819 1150  558    0  975]]
+ # This means that the elements in the variable X, at the indices in the list above are the most similar to that which we passed in.
