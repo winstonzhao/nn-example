@@ -17,10 +17,10 @@ df = df.fillna(0)
 X = df.to_numpy()
 
 # Train Model
-kmeans = NearestNeighbors(n_neighbors=2, radius=0.4).fit(X)
+nn = NearestNeighbors(n_neighbors=2, radius=0.4).fit(X)
 
 # Get most similar houses to this random example
-print(kmeans.kneighbors([[1.000e+00, 1.961e+03, 1.000e+00, 1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+print(nn.kneighbors([[1.000e+00, 1.961e+03, 1.000e+00, 1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
  0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
  0.000e+00]], 5, False))
 
